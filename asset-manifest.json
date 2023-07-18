@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/hlegal/static/css/main.42824cb8.css",
+    "main.js": "/hlegal/static/js/main.c5d0b3e3.js",
+    "static/media/Person-tablet.png": "/hlegal/static/media/Person-tablet.2ff25cac54e8f9a895ac.png",
+    "static/media/Person.png": "/hlegal/static/media/Person.94b4d86031c8fbcf4544.png",
+    "static/media/Cover-2.png": "/hlegal/static/media/Cover-2.5c2cb2cff74f46679628.png",
+    "static/media/Symbol.png": "/hlegal/static/media/Symbol.a1d3474ea24f48740609.png",
+    "index.html": "/hlegal/index.html",
+    "main.42824cb8.css.map": "/hlegal/static/css/main.42824cb8.css.map",
+    "main.c5d0b3e3.js.map": "/hlegal/static/js/main.c5d0b3e3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42824cb8.css",
+    "static/js/main.c5d0b3e3.js"
+  ]
+}
