@@ -1,0 +1,114 @@
+#services {
+	margin: 20px 0;
+
+	a {
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #24a3ff;
+		cursor: pointer;
+
+		font: {
+			weight: 700;
+			size: 14px;
+		}
+
+		&::after {
+			content: '\003E';
+			padding-left: 5px;
+		}
+
+		&:hover {
+			color: #f0145a;
+			transition: all 0.4s ease;
+		}
+	}
+
+	.title {
+		margin: 10px 0 30px;
+		background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+		line-height: 37px;
+		text-align: left;
+
+		font: {
+			weight: 700;
+			size: 30px;
+		}
+	}
+
+	.cardsContainer {
+		.cardItem {
+			svg {
+				margin: 0 0 30px;
+			}
+
+			h3 {
+				line-height: 27px;
+				color: #24a3ff;
+				margin-bottom: 15px;
+
+				font: {
+					weight: 700;
+					size: 22px;
+				}
+			}
+
+			p {
+				line-height: 26px;
+				color: #fff;
+				margin: 0 0 30px 0;
+
+				font: {
+					weight: 400;
+					size: 16px;
+				}
+			}
+
+			&:last-child {
+				padding: 0 0 60px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#services {
+		.title {
+			line-height: 46px;
+
+			font: {
+				weight: 700;
+				size: 38px;
+			}
+		}
+
+		.cardsContainer {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 60px;
+
+			.cardItem {
+				width: 45%;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	#services {
+		.cardsContainer {
+			.cardItem {
+				width: 28%;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	#services {
+		margin-top: 60px;
+	}
+}

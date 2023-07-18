@@ -1,0 +1,171 @@
+#ourTeam {
+	padding: 30px 0 0;
+
+	a {
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #24a3ff;
+		cursor: pointer;
+
+		font: {
+			weight: 700;
+			size: 14px;
+		}
+
+		&::after {
+			content: '\003E';
+			padding-left: 5px;
+		}
+
+		&:hover {
+			color: var(--red);
+			transition: all 0.4s ease;
+		}
+	}
+
+	.title {
+		margin: 5px 0 30px;
+		background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+		line-height: 37px;
+		text-align: left;
+
+		font: {
+			weight: 700;
+			size: 30px;
+		}
+	}
+
+	.imgPerson {
+		width: 100%;
+		height: 500px;
+		background: url('../../../public/img/Person.png');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		border-radius: 12px 12px 0 0;
+	}
+
+	.content {
+		background-color: #f5f5fa;
+		padding: 30px;
+	}
+
+	h4 {
+		color: #b3b3ba;
+		line-height: 20px;
+
+		font: {
+			weight: 700;
+			size: 16px;
+		}
+	}
+
+	p {
+		color: #b3b3ba;
+		line-height: 22px;
+
+		font: {
+			weight: 400;
+			size: 14px;
+		}
+	}
+
+	.slick-list {
+		overflow: hidden;
+	}
+
+	.slick-slider {
+		position: relative;
+	}
+
+	.slick-track {
+		display: flex;
+	}
+
+	.slick-dots {
+		margin: 30px 0 0 0;
+		list-style: none;
+		padding: 0;
+		position: absolute;
+		bottom: -30px;
+		display: block;
+		width: 100%;
+		text-align: center;
+
+		button {
+			font-size: 0;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: #000;
+			width: 16px;
+			height: 16px;
+			background-color: #24a3ff;
+			margin-left: 15px;
+			border-radius: 20px;
+			opacity: 0.2;
+			cursor: pointer;
+		}
+
+		li {
+			position: relative;
+			display: inline-block;
+
+			&.slick-active {
+				button {
+					display: block;
+					background-color: #24a3ff;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#ourTeam {
+		.title {
+			line-height: 46px;
+
+			font: {
+				weight: 700;
+				size: 38px;
+			}
+		}
+
+		.imgPerson {
+			background: url('../../../public/img/Person-tablet.png');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	#ourTeam {
+		.slick-slide {
+			.slide {
+				display: flex !important;
+				justify-content: space-between;
+			}
+		}
+
+		.imgPerson {
+			max-height: 370px;
+			background-image: url('../../../public/img/Person.png');
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: center;
+			border-radius: 12px 0 0 12px;
+		}
+
+		.content {
+			width: 130vw;
+		}
+	}
+}

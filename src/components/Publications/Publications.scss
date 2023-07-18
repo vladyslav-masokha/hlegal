@@ -1,0 +1,165 @@
+#ourPublications {
+	background-color: #f5f5fa;
+	padding: 30px 0 0;
+
+	a {
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #24a3ff;
+		cursor: pointer;
+
+		font: {
+			weight: 700;
+			size: 14px;
+		}
+
+		&::after {
+			content: '\003E';
+			padding-left: 5px;
+		}
+
+		&:hover {
+			color: #f0145a;
+			transition: all 0.4s ease;
+		}
+	}
+
+	.title {
+		margin: 5px 0 30px;
+		background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+		line-height: 37px;
+		text-align: left;
+
+		font: {
+			weight: 700;
+			size: 30px;
+		}
+	}
+
+	.cardTitle {
+		color: #24a3ff;
+		line-height: 20px;
+		margin: 0 0 10px;
+
+		font: {
+			weight: 700;
+			size: 16px;
+		}
+	}
+
+	.cardItem {
+		background-color: var(--light);
+		margin: 0 0 30px;
+
+		img {
+			width: 100%;
+		}
+
+		.content {
+			padding: 30px;
+		}
+
+		p {
+			color: var(--dark);
+			line-height: 22px;
+
+			font: {
+				weight: 400;
+				size: 14px;
+			}
+
+			&.date {
+				line-height: 15px;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				color: #b3b3ba;
+
+				font: {
+					weight: 700;
+					size: 12px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#ourPublications {
+		.cardsContainer {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.cardImg {
+			display: block;
+			background-image: url('../../../public/img/Cover-2.png');
+			height: 47vh;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		.imgDesktop {
+			display: none;
+		}
+
+		.cardsContainerItems {
+			display: flex;
+			justify-content: space-between;
+
+			.cardItem {
+				width: 40vw;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	#ourPublications {
+		.cardImg {
+			display: none;
+		}
+
+		.imgDesktop {
+			display: block;
+		}
+
+		.cardsContainer {
+			flex-direction: row;
+			justify-content: center;
+			gap: 30px;
+
+			.cardItem {
+				width: 27vw;
+				gap: 30px;
+			}
+		}
+
+		.cardsContainerItems {
+			gap: 30px;
+		}
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	#ourPublications {
+		.cardItem {
+			width: 29vw;
+		}
+
+		.cardImg {
+			height: 40vh;
+		}
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	#ourPublications {
+		.cardItem {
+			width: 26vw;
+		}
+	}
+}

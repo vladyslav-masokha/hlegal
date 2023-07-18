@@ -1,0 +1,219 @@
+.footer {
+	background-color: #f5f5fa;
+
+	hr {
+		width: 100%;
+		margin: 0 auto 30px auto;
+		border: 2px solid #e6e6f0;
+	}
+
+	.content {
+		address {
+			line-height: 20px;
+			color: #323264;
+			text-align: center;
+
+			font: {
+				weight: 400;
+				size: 16px;
+			}
+		}
+
+		a[href="http://facebook.com"]
+		{
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			margin-top: 21px;
+		}
+
+		a[href='tel:0800211927'] {
+			line-height: 20px;
+			color: #46466e;
+			text-decoration: none;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			margin: 10px;
+
+			font: {
+				weight: 700;
+				size: 16px;
+			}
+		}
+
+		a[href='mailto:contact@forstudy.space'] {
+			line-height: 20px;
+			color: #24a3ff;
+			text-decoration: none;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+
+			font: {
+				weight: 700;
+				size: 16px;
+			}
+		}
+	}
+
+	.adr-map-copyright {
+		a {
+			line-height: 15px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			color: #24a3ff;
+			text-decoration: none;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			margin-top: 10px;
+
+			font: {
+				weight: 700;
+				size: 12px;
+			}
+		}
+
+		.copyright {
+			display: none;
+		}
+	}
+
+	.mobile {
+		line-height: 20px;
+		text-align: center;
+		color: #b3b3ba;
+		padding: 0;
+		padding: 30px 0;
+
+		font: {
+			weight: 400;
+			size: 16px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.footer {
+		.content {
+			address {
+				margin: 0;
+				text-align: start;
+			}
+
+			a[href='tel:0800211927'] {
+				margin: 0 0 0 10px;
+				align-items: center;
+			}
+
+			a[href="http://facebook.com"]
+			{
+				margin: 0;
+				align-items: center;
+			}
+		}
+
+		.adr-map-copyright {
+			.copyright {
+				margin: 0;
+				padding: 0;
+				display: block;
+				line-height: 20px;
+				text-align: center;
+				color: #b3b3ba;
+				padding: 0;
+
+				font: {
+					weight: 400;
+					size: 16px;
+				}
+			}
+
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			div {
+				display: flex;
+			}
+
+			a {
+				margin-top: 0;
+				margin-left: 10px;
+				align-items: center;
+
+				&::before {
+					content: '';
+					width: 6px;
+					height: 6px;
+					background-color: #b3b3ba;
+					border-radius: 20px;
+					margin-right: 10px;
+				}
+			}
+		}
+
+		.fb-tel-mail {
+			display: flex;
+			align-items: center;
+			padding: 30px 0;
+		}
+
+		a[href='mailto:contact@forstudy.space'] {
+			margin-top: 0;
+			margin-left: 10px;
+			align-items: center;
+
+			&::before {
+				content: '';
+				width: 6px;
+				height: 6px;
+				background-color: #b3b3ba;
+				border-radius: 20px;
+				margin-right: 10px;
+			}
+		}
+
+		a[href='tel:0800211927'] {
+			&::before {
+				content: '';
+				width: 6px;
+				height: 6px;
+				background-color: #b3b3ba;
+				border-radius: 20px;
+				margin-right: 10px;
+			}
+		}
+
+		.contact {
+			a[href="http://facebook.com"]
+			{
+				&::before {
+					content: '';
+					width: 6px;
+					height: 6px;
+					background-color: #b3b3ba;
+					border-radius: 20px;
+					margin-right: 10px;
+				}
+			}
+		}
+
+		.mobile {
+			display: none;
+		}
+	}
+}
